@@ -1,7 +1,3 @@
-# CI_CD_Agrocd_GitAction
-CI using GitOps and CD using Agrocd
-
-
 # Complete CI/CD DevOps Project 🚀
 ### Deploy Python Flask App on Kubernetes cluster with GitOps Approach. 
 
