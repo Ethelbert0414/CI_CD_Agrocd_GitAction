@@ -89,7 +89,7 @@ CMD ["python", "app.py"]
 #### Lets Build and Run the Container
 1. Build the Image: Run the following in the directory containing your Dockerfile:
 ```
-docker build -t 1nfosecsingh/demo-app:v1 .
+docker build -t ethelbert0414/demo-app:v1 .
 ```
 Note: you need to change the name of your image, according to your dockerhub username.
 
