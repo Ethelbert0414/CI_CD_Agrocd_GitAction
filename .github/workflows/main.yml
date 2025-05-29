@@ -50,12 +50,12 @@ jobs:
       # Build the Docker Image
       - name: Build Docker Image
         run: |
-          docker build . -t 1nfosecsingh/demo-app:${{ env.VERSION }} 
+          docker build . -t ethelbert0414/demo-app:${{ env.VERSION }} 
       
       # Push the Docker Image
       - name: Push Docker Image
         run: |
-          docker push 1nfosecsingh/demo-app:${{ env.VERSION }}
+          docker push ethelbert0414/demo-app:${{ env.VERSION }}
       
       # UPdate the K8s Manifest Files
       - name: Update K8s Manifests
