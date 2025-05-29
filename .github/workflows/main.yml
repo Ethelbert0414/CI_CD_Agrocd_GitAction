@@ -70,6 +70,10 @@ jobs:
           git config --global user.email "ethelbertobi@gmail.com"
           git config --global user.name "GitHub Actions Bot"
           git add deploy/deploy.yaml
-          git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
-          git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/infosecsingh/Flask-App-GitHub-Actions-ArgoCD.git
-          git push origin master
+          if ! git diff --cached --quiet; then
+             git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
+             git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/ethelbert0414/Ethelbert0414/CI_CD_Agrocd_GitAction.git
+             git push origin main
+          else
+            echo "No changes to commit."
+          fi
