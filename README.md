@@ -335,3 +335,23 @@ Output
 Application running on http://172.29.213.129:30008
 
 ![alt text](imgs/application.png)
+
+
+
+# For the demo-app-service in the default namespace, here's how to complete the port-forward command and access URL:
+
+Service name: demo-app-service
+
+Namespace: default
+
+Target port: 5000
+
+```
+kubectl port-forward svc/demo-app-service 8081:5000 -n default
+```
+This maps local port 8081 to the service's port 5000.
+
+# Access in browser:
+```
+http://localhost:8081
+```
