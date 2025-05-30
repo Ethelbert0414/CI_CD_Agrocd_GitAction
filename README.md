@@ -355,3 +355,7 @@ This maps local port 8081 to the service's port 5000.
 ```
 http://localhost:8081
 ```
+If your App URL does show in the box, run this command.
+```
+minikube service <service-name> -n <namespace>
+```
