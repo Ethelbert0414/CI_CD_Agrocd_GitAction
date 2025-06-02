@@ -205,7 +205,7 @@ Note: You can setup Argo CD in any cluster, instructions are same.
     ```
     kubectl get all -n argocd
     ```
-    #Check if Argo CD is running:
+    # Check if Argo CD is running:
     ```
     kubectl get pods -n argocd
     ```
