@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-app-deployment
-  namespace: default
+
 spec:
   replicas: 2
   selector:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: ethelbert0414/demo-app:v20250530230237
+        image: ethelbert0414/demo-app:v20250602153453
         ports:
         - containerPort: 5000

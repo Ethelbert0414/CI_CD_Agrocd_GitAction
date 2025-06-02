@@ -86,14 +86,14 @@ EXPOSE 5000
 # Step 6: Define the command to run the application
 CMD ["python", "app.py"]
 ```
-#### Lets Build and Run the Container
+#### Let's Build and Run the Container
 1. Build the Image: Run the following in the directory containing your Dockerfile:
 ```
 docker build -t ethelbert0414/demo-app:v1 .
 ```
 Note: you need to change the name of your image, according to your dockerhub username.
 
-2. Lets create container with image.
+2. Let's create a container with image.
  ```
  docker run -d -p 5000:5000 --name=demo-app demo-app
  ```
@@ -204,6 +204,10 @@ Note: You can setup Argo CD in any cluster, instructions are same.
 - Verify if ArgoCD is running:
     ```
     kubectl get all -n argocd
+    ```
+    # Check if Argo CD is running:
+    ```
+    kubectl get pods -n argocd
     ```
     Output
     ```    
